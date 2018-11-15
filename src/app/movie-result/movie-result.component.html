@@ -1,0 +1,36 @@
+<div class="container">
+	<div class="row">
+		<div class="col-md-12 text-center" *ngIf="show">
+			<h4>Movie Details</h4>
+			<div class="col-md-8 offset-md-2">
+				<table class="table-bordered table-responsive table-light">
+					<tbody>
+						<tr>
+							<td>Coutry</td>
+							<td>{{country}}</td>
+						</tr>
+						<tr>
+							<td>Title</td>
+							<td>{{movieTitle}}</td>
+						</tr>
+						<tr>
+							<td>Release Date</td>
+							<td>{{releaseDate}}</td>
+						</tr>
+						<tr>
+							<td>Movie Actors</td>
+							<td>{{movieActors}}</td>
+						</tr>
+						<tr>
+							<td>Movie Poster</td>
+							<td><img src="{{moviePoster}}" style="text-align: center;"></td>
+						</tr>
+					</tbody>
+				</table>				
+			</div>
+		</div>
+		<div class="col-md-4 offset-md-3 text-center">
+			<h4>{{error}}</h4>
+		</div>
+	</div>
+</div>

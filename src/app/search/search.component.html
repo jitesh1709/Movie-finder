@@ -1,0 +1,9 @@
+<div class="container">
+	<div class="row">
+		<div class="col-md-8 p-5 offset-md-3">
+			<h4>Search for movie</h4><br>
+			<input type="text" name="search" autofocus="true" autocomplete="on" class="form-control p-2 col-md-6 d-inline-block" [(ngModel)]="searchString">
+			<button name="Search Button" class="btn btn-primary offset-md-1 d-inline-block" (click)='getMovies()'>Search</button>			
+		</div>
+	</div>
+</div>
